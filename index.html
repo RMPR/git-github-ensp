@@ -12,7 +12,7 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<div class="reveal">
@@ -24,10 +24,107 @@
                     </aside>
 				</section>
                 <section>
-                    <i class="fa fa-camera-retro fa-lg"></i>
-                    <i class="fa fa-camera-retro fa-2x"></i>
-                    <i class="fa fa-camera-retro fa-5x"></i>
+					<h2>About Me</h2>
+					<ul style="list-style-type: none;">
+                        <li><i class="fa fa-twitter" style="color: #1DA1F2"></i> _paulmairo</li>
+                        <li><i class="fa fa-github"></i> RMPR</li>
+                        <li><i class="fa fa-rss" style="color: #EE802F"></i> rmpr.xyz</li>
+					</ul>
+				</section>
+                <section>
+					<section>
+                        <h2>First part: <i class="fa fa-git-square"></i></h2>
+                        <img src="https://imgs.xkcd.com/comics/git.png" />
+					</section>
+					<section>
+						<h2>Quick backstory</h2>
+                        <p>Created in 2005 by Linus Torvalds <em>for the Linux Kernel</em></p>
+					</section>
+					<section>
+						<h2>Problem Git solves</h2>
+						<p>Version Control, what do you want me to say?</p>
+                        <p class="fragment fade-in">
+                            <img src="examples/assets/projet_poo.png" />
+                            To avoid situations like these
+                        </p>
+					</section>
+                    <section>
+						<h2>Why the CLI?</h2>
+						<p class="fragment fade-down">Platform independent</p>
+						<p class="fragment fade-left">Actually understand what's going on</p>
+						<p class="fragment fade-right">Makes you use the GUIs better</p>
+						<p class="fragment fade-up">The CLI is more complete (one minor version every month)</p>
+					</section>
                 </section>
+                <section>
+					<section>
+                        <h2>The first thing you need to know</h2>
+					</section>
+					<section>
+						<h2>git status</h2>
+						<p>Show the working tree status</p>
+					</section>
+					<section>
+                        <h2>Practical Stuff</h2>
+                        <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                        git init
+                        </code></pre>
+                        <p>For this presentation though</p>
+                        <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                        git clone https://github.com/rmpr/Core-1
+                        </code></pre>
+                        <p>⚠️ Might need to setup credentials</p>
+					</section>
+                    <section>
+                        <h2 data-id="code-title">"Pretty" Log </h2>
+                        <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                        git log --all --decorate --oneline --graph
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2 data-id="code-title">When conflict happens</h2>
+                        <img src="examples/assets/gitpushforcememe.jpeg" />
+                    </section>
+                </section>
+                <section>
+					<section>
+                        <h2>Second part: <i class="fa fa-github"></i></h2>
+					</section>
+					<section>
+						<h2>What is it?</h2>
+                        <p>Forge that offers Managed services around Git (hosting, actions, ...)</p>
+                        <p>Like...</p>
+                        <p><i class="fa fa-bitbucket"></i> Bitbucket</p>
+                        <p><i class="fa fa-gitlab"></i> Gitlab</p>
+                        <p>Yes you can host your server too</p>
+                        <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Gitea_Logo.svg"></img> Gitea</p>
+					</section>
+					<section>
+						<h2>What is a PR?</h2>
+						<p>Simply put, it's a request to merge code from my branch to your branch</p>
+					</section>
+                    <section>
+						<h2>How to proceed?</h2>
+                        <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github">Let's not reinvent the wheel</a>
+					</section>
+                </section>
+                <section>
+					<h2>Add your name down here ↓ </h2>
+                    <p>Hint: you might want to fork the repository of the slides https://github.com/rmpr/git-github-ensp and modify index.html</p>
+					<ul>
+                        <li>RMPR</li>
+					</ul>
+				</section>
+
+                <section>
+					<h2>Dig deeper</h2>
+					<ul style="list-style-type: none;">
+                        <li><a href="https://chris.beams.io/posts/git-commit/">How to write a Git commit message</a></li>
+                        <li><a href="https://ohshitgit.com/">Oh Shit, Git!?!</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2">Pro Git</a></li>
+					</ul>
+				</section>
+                
 			</div>
 		</div>
 
